@@ -1,0 +1,149 @@
+*{
+    /* border: 1px solid black; */
+}
+
+.card{
+    position: relative;
+    /* border: 1px solid black; */
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+}
+.photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px 0px rgb(146, 146, 146);
+}
+.holder{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.uploadedBorderPhoto{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+}
+.uploadedPhoto{
+    max-width: 180px;
+    max-height: 180px;
+}
+.votes{
+    position: absolute;
+    top:28px;
+    left:-10px;
+    width: 100px;
+    background-color: white;
+    opacity: 80%;
+    transform: rotate(-45deg);
+
+}
+.votesText{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Winner photo */
+.cardWinner{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photoWinner{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 5px 0px rgb(146, 146, 146);
+}
+.holderWinner{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.uploadedBorderPhotoWinner{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.uploadedPhotoWinner{
+    max-width: 200px;
+    max-height: 200px;
+}
+.checkBoxWinner{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    opacity: 60%;
+    border-radius: 5px;
+}
+.checkMarkWinner{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 60px;
+    margin-top: -20px;
+}
+.votesWinner{
+    position: absolute;
+    top:28px;
+    left:-10px;
+    width: 100px;
+    background-color: white;
+    /* background-color: red; */
+    opacity: 80%;
+    transform: rotate(-45deg);
+
+}
+.votesTextWinner{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* @media screen and (max-width: 1100px){
+    .karmaWithAlert{
+        position: unset;
+    }
+    .karma{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 700px){
+    .karmaWithAlert{
+        position: unset;
+    }
+    .karma{
+        width: 100vw;
+        height: 120px;
+        margin-top: 60px;
+    }
+} */

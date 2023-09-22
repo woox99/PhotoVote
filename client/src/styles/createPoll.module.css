@@ -1,0 +1,93 @@
+*{
+    /* border: 1px solid black; */
+}
+
+.white{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* min-height: 460px; */
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.upload{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.uploadLabel{
+    width: 180px;
+    height: 180px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.uploadLabel:hover{
+    cursor: pointer;
+}
+.holder{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    backdrop-filter: blur(30px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.uploadedBorderPhoto{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+}
+.uploadedPhoto{
+    max-width: 180px;
+    max-height: 180px;
+}
+.uploadIcon{
+    height: 120px;
+}
+.uploadText{
+    font-size: 15px;
+}
+.inputs{
+    width: 550px;
+}
+.select{
+    width: 200px;
+    margin-top: 20px;
+}
+.textField{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.createButton{
+    margin-bottom: -20px !important;
+}
+
+/* Mobile */
+@media screen and (max-width: 700px){
+    .title{
+        margin-top: 20px;
+    }
+    .upload{
+        transform: scale(0.60);
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textField{
+        transform: scale(.6);
+    }
+
+}

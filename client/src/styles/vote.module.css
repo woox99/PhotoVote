@@ -1,0 +1,122 @@
+*{
+    /* border: 1px solid black; */
+}
+
+.white{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* min-height: 460px; */
+}
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f4fbff;
+    width: 700px;
+    height: 70px;
+    border-radius: 20px 20px 0px 0px;
+}
+.captionText{
+    font-size: 15px;
+}
+.photos{
+    display: flex;
+    justify-content: center;
+    /* gap: 15px; */
+    /* margin-top: 40px; */
+    /* margin-bottom: 40px; */
+}
+.card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+}
+.selectedCard{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+    transform: scale(1.1);
+    opacity: 100%;
+}
+.photo{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px 0px rgb(146, 146, 146);
+}
+.holder{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.uploadedBorderPhoto{
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+}
+.uploadedPhoto{
+    max-width: 180px;
+    max-height: 180px;
+}
+.card:hover{
+    opacity: 90%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* .selectedPhoto{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 50%;
+} */
+
+.submitButton{
+    margin-bottom: -20px !important;
+}
+.disabledButton{
+    margin-bottom: -20px !important;
+    /* background-color: rgb(209, 209, 209) !important; */
+    color: #bee7ff !important;
+    border: 1px solid #bee7ff !important;
+}
+
+@media screen and (max-width: 700px){
+    .header{
+        width: 100%;
+        height: 70px;
+        margin-top: 20px;
+    }
+    .captionText{
+        font-size: 11px;
+    }
+    .photos{
+        flex-wrap: wrap;
+    }
+    .textField{
+        display: none !important;
+    }
+}
