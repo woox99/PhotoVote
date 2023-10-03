@@ -95,7 +95,7 @@ const CreatePoll = props => {
                     }
                 }
                 else(
-                    errorArr.push('Files too large or unsupported file type. Files need to be under 4MB each.')
+                    errorArr.push('Files too large. Try uploading files smaller than 1MB.')
                 )
                 setErrors(errorArr);
             })
