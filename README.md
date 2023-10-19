@@ -9,9 +9,17 @@ Upload 3 photos and let the PhotoVote community vote which one is best for the o
 ![Static Badge](https://img.shields.io/badge/React%20-%20%23EEAEAE) ![Static Badge](https://img.shields.io/badge/Node.js%20-%20%23EEAEAE)   ![Static Badge](https://img.shields.io/badge/Express%20-%20%23EEAEAE)   ![Static Badge](https://img.shields.io/badge/MongoDB-%20%23EEAEAE) ![Static Badge](https://img.shields.io/badge/Mongoose%20-%20%23EEAEAE)  ![Static Badge](https://img.shields.io/badge/npm%20-%20%23EEAEAE)   ![Static Badge](https://img.shields.io/badge/Multer%20-%20%23EEAEAE) ![Static Badge](https://img.shields.io/badge/AWS%20EC2%20-%20%23EEAEAE)
 
 
+## Overview
+
+* Leveraged a component-based architecture & virtual DOM with React, combined with Node.js & Express
+framework on the backend, & MongoDB for data storage.
+* Integrated multiple photo uploads with a single request using multer middleware.
+* Utilized JSON Web Token (JWT) for user authentication, authorization, & route protection | Bcrypt hashing &
+salting algorithm for robust password security.
 
 
-## Features
+
+## Features Walkthrough
 
 #### Security 🔒
 

@@ -77,6 +77,7 @@ const CreatePoll = props => {
         poll.append('caption', caption.charAt(0).toUpperCase() + caption.slice(1)); //capitalize first letter);
         poll.append('karma', activeUser.karma);
 
+        //should probably authenticate this poll
         axios.post("http://localhost:8000/api/poll", poll)
             .then(() => {
                 // setUploadStatus('File uploaded successfully.')
