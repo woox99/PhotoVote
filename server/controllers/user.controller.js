@@ -11,6 +11,12 @@ module.exports = {
             return res.status(400).json({ errors: { email: { message: "This email is already associated with an account."} } });
         }
 
+        // Prevent anybody from using postman or similar to assign themselves admin
+        // is_admin can only be changed through DB
+        if(req.body.isAdmin){
+            delete req.body.isAdmin
+        }
+
         User.create(req.body)
             .then(user => {
                 const payload = {id: user._id};
@@ -36,8 +42,11 @@ module.exports = {
             return res.status(400).json({ message: "Invalid Password." })
         }
 
-        // If we made it this far, the password was correct and we create cookie
-        const payload = {id: user._id};
+        // If we made it this far, the password was correct and we create the cookie
+        const payload = {
+            id: user._id,
+            isAdmin: user.isAdmin, // Add isAdmin property
+        };
         const userToken = jwt.sign(payload, process.env.SECRET_KEY)
         res.cookie('usertoken', userToken, { httpOnly: true }).json({ message: 'Logged in!', user:user });
     },
@@ -76,9 +85,16 @@ module.exports = {
     },
 
     findAll: (req, res) => {
-        User.find({})
-            .then(users => res.json(users))
-            .catch(err => res.status(401).json(err));
+        console.log("req.user", req.user); // Debugging: Print req.user
+        
+        // Check if the user is an admin
+        if (req.user.isAdmin) {
+            User.find({})
+                .then(users => res.json(users))
+                .catch(err => res.status(401).json(err));
+        } else {
+            res.status(403).json({ message: 'Access forbidden. You must be an admin.' });
+        }
     },
 
     deleteUser: (req, res) => {

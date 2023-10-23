@@ -58,7 +58,7 @@ const HomePage = props => {
                 <div className={styles.demoButton}>
                 <Button
                     id="btn"
-                    onClick={createDemoAccount}>user demo account</Button>
+                    onClick={createDemoAccount}>use demo account</Button>
                 </div>
                 <Steps />
             </div>
