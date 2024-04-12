@@ -3,7 +3,7 @@
 
 ## About PhotoVote
 
-Upload 3 photos and let the PhotoVote community vote which one is best for the occasion. PhotoVote is a full-stack demo project for my [portfolio](https://woox99.github.io/Portfolio/). Quickly access the full functionality of the website with a Demo Account [here](http://3.143.25.6/).
+Developed this application end-to-end with the JavaScript MERN stack and deployed on AWS. This application allows users to upload photos to be voted on by other users, helping them make decisions based on large group consensus.
 
 ## Build Stack
 ![Static Badge](https://img.shields.io/badge/React%20-%20%23EEAEAE) ![Static Badge](https://img.shields.io/badge/Node.js%20-%20%23EEAEAE)   ![Static Badge](https://img.shields.io/badge/Express%20-%20%23EEAEAE)   ![Static Badge](https://img.shields.io/badge/MongoDB-%20%23EEAEAE) ![Static Badge](https://img.shields.io/badge/Mongoose%20-%20%23EEAEAE)  ![Static Badge](https://img.shields.io/badge/npm%20-%20%23EEAEAE)   ![Static Badge](https://img.shields.io/badge/Multer%20-%20%23EEAEAE) ![Static Badge](https://img.shields.io/badge/AWS%20EC2%20-%20%23EEAEAE)
@@ -27,7 +27,6 @@ User Authentication & Authorization
 * Password ***hashing***
 * Registration ***validation***
 * Route protection
-* [Demo Account](http://3.143.25.6/)
 
 --- 
 
